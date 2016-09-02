@@ -24,6 +24,17 @@ def ins_sort(arr)
   return result
 end
 
-# super simple testing, will add .benchmark results after adding more implementations
-test1 = a.sort == ins_sort(a) ? "pass" : "fail"
-puts "Algorithm output matches built in #sort output:" + " #{test1}"
+# Very basic sorting method with O(n^2) worst-case time
+# Why use? Insertion sort is adaptive (when mostly sorted) and stable, and works well with small problems!!! 
+
+# Key properties:
+  # Stable (that is: two keys in the input array with equal values remain in the same order in the output/sorted array).
+  # Adaptive, when nearly sorted (that is: if a given number of keys in the input array are presorted, this algorithm can take advantage of the existing order to complete faster)
+  # O(1) worst space complexity
+  # O(n^2) worst/avg time complexity
+  # Ω(n) best time complexity
+  # Also note that generally insertion sort has extremely low overhead, so the cost of implementation is minimal/often trivial
+
+# super simple testing, see benchmark.rb results
+test1 = a.sort == ins_sort(a) ? "PASS" : "FAIL"
+puts "#{test1}: insertion_sort output matches #sort output."
