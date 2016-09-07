@@ -1,4 +1,9 @@
-ab = [3, 5, 1,  2, 1, 11]
+import random
+n = random.randint(1, 1000)
+ab = []
+for i in range(n):
+  ab.append(random.randint(1, n))
+  
 def ins_sort(a):
   for i in range(1, len(a)):
     curr_val = a[i]
