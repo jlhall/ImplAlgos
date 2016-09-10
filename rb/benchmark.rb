@@ -3,6 +3,7 @@ require_relative 'insertion_sort'
 require_relative 'selection_sort'
 require_relative 'bubble_sort'
 require_relative 'shell_sort'
+require_relative 'merge_sort'
 print "\n"
 
 # a = sample array of size (n)
@@ -19,4 +20,5 @@ Benchmark.bmbm do |x|
   x.report("#sel_sort:") {sel_sort(a)}
   x.report("#bub_sort:") {bub_sort(a)}
   x.report("#shell_sort:") {shell_sort(a)}
+  x.report("#merge_sort:") {merge_sort(a)}
 end
