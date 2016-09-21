@@ -1,3 +1,6 @@
+// reference: Binary Trees
+// from Brian Holt's CS Course
+
 // this does not handle the duplicate edge case
 // which is generally handled by always going left
 // or always right etc. for duplicates collecting these 
