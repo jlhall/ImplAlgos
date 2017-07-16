@@ -1,0 +1,10 @@
+{
+  "name": "impl-algos",
+  "version": "0.0.1",
+  "description": "Implementing algorithms and data structures in various languages",
+  "author": "Jonathan L. Hall <jonathanleehall@gmail.com> (http://downahallway.com/)",
+  "homepage": "https://github.com/jlhall/ImplAlgos#readme",
+  "dependencies": {
+    "jest": "^20.0.4"
+  }
+}
