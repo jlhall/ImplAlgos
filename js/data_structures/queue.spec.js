@@ -1,21 +1,23 @@
 var Queue = require('./queue')
 
 describe('Queue()', function() {
-  it('initializes with a size', function() {
-    var queue = new Queue(2)
-    expect(queue.size()).toEqual(2)
-  })
   it('has a enqueue function', function() {
-    var queue = new Queue(2)
-    expect(queue.enqueue('s')).toEqual(queue)
+    var queue = new Queue
+    expect(queue.enqueue('s')).toEqual(1)
   })
   it('has a dequeue function', function() {
-    var queue = new Queue(2)
+    var queue = new Queue
+    queue.enqueue('a')
+    queue.enqueue('b')
+    expect(queue.dequeue()).toEqual('a')
+  })
+  it('has a count function', function() {
+    var queue = new Queue
     queue.enqueue('s')
-    expect(queue.dequeue()).toEqual('s')
+    expect(queue.count()).toEqual(1)
   })
   it('has a peek function', function() {
-    var queue = new Queue(2)
+    var queue = new Queue
     queue.enqueue('a')
     queue.enqueue('b')
     expect(queue.peek()).toEqual('a')
